@@ -2,7 +2,7 @@ pipeline {
         agent any
         environment {
 		registry = "kirandocker3887/mytomcatimage1"
-            	registryCredential = 'dockerhubcredentials'
+            	registryCredential = '50545a2f-aad4-4b64-bf3f-3a1bff0ad888'
             	dockerImage = ''
 		        PROJECT_ID = 'devops-kiran'
  		        CLUSTER_NAME = 'sprint6-kubectl-cluster-gcloud-kk'
