@@ -7,7 +7,7 @@ pipeline {
 		        PROJECT_ID = 'devops-kiran'
  		        CLUSTER_NAME = 'sprint6-kubectl-cluster-gcloud-kk'
  		        LOCATION = 'europe-west3-c'
- 		        CREDENTIALS_ID = 'sprint6-k8-kk'
+ 		        CREDENTIALS_ID = 'Sprint6-k8-kk'
         }
 		
 	    stages {	
