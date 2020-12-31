@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: kubedemofromjenkins
-        image: ramkitcs/dockerapp:30 
+        image: kirandocker3887/mytomcatimage1:tagversion 
         ports:
         - containerPort: 8080
 ---
