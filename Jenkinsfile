@@ -1,7 +1,7 @@
 pipeline {
         agent any
         environment {
-		registry = "github221028/DevOps-KiranKumar-Repo"
+		registry = "kirandocker3887/mytomcatimage1"
             	registryCredential = 'dockerhubcredentials'
             	dockerImage = ''
 		        PROJECT_ID = 'devops-kiran'
