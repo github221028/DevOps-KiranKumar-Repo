@@ -1,19 +1,19 @@
 apiVersion: apps/v1 
 kind: Deployment 
 metadata:
-  name: kubedemofromJenkins
+  name: kubedemofromjenkins
 spec:
   replicas: 2 
   selector:
    matchLabels:
-    app: kubedemofromJenkins
+    app: kubedemofromjenkins
   template:
     metadata: 
       labels:
-        app: kubedemofromJenkins
+        app: kubedemofromjenkins
     spec:
       containers:
-      - name: kubedemofromJenkins
+      - name: kubedemofromjenkins
         image: ramkitcs/dockerapp:30 
         ports:
         - containerPort: 8080
@@ -21,9 +21,9 @@ spec:
 apiVersion: v1 
 kind: Service 
 metadata:
-  name: kubedemofromJenkins-svc 
+  name: kubedemofromjenkins-svc 
   labels:
-    app: kubedemofromJenkins 
+    app: kubedemofromjenkins 
 spec:
   type: LoadBalancer 
   ports:
@@ -31,4 +31,4 @@ spec:
     port: 8009
     targetPort: 8080
   selector:
-    app: kubedemofromJenkins
+    app: kubedemofromjenkins
