@@ -1,6 +1,9 @@
 pipeline {
         agent any
         environment {
+		registry = "github221028/DevOps-KiranKumar-Repo"
+            	registryCredential = 'dockerhubcredentials'
+            	dockerImage = ''
 		        PROJECT_ID = 'devops-kiran'
  		        CLUSTER_NAME = 'sprint6-kubectl-cluster-gcloud-kk'
  		        LOCATION = 'europe-west3-c'
